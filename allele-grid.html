@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>DNA Tools - Allele Grid</title>
+        <link rel="stylesheet" href="allelegridstyle.css" />
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    </head>
+    <body>
+        <header>
+            <h1>DNA Tools</h1>
+            <nav>
+                <a href="./index.html">Conversions</a>
+                <div class="dropdown">
+                    <button class="dropbtn">This Page <i class="fa fa-caret-down"></i></button>
+                    <div class="dropdown-content">
+                        <a id="regular" href="javascript:;">regular</a>
+                        <a id="partial-dominance" href="javascript:;">partial dominance</a>
+                        <a id="codominance" href="javascript:;">codominance</a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <div id="regular-grid">
+                <table>
+                    <tr>
+                        <td role="presentation"></td>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                    <tr>
+                        <th></th>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th></th>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </table>
+                Dominant Gene: <input type="text" id="regular-dominant" /> (<span id="dominant-fl"></span>)
+                Recessive Gene: <input type="text" id="regular-recessive" /> (<span id="recessive-fl"></span>)
+            </div>
+            <div id="partial-dominance-grid">
+
+            </div>
+            <div id="codominance-grid">
+
+            </div>
+        </main>
+    </body>
+</html>

@@ -1,0 +1,150 @@
+* {
+    font-family: 'Helvetica Neue', 'Arial Narrow', Helvetica, Arial, sans-serif;
+}
+
+*:not(ul, ol, li) {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+}
+
+a {
+    text-decoration: none;
+    color: #4040ff;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #8080ff;
+}
+
+a:active {
+    text-decoration: underline;
+    color: #ff8080;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+  
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+}
+   
+::-webkit-scrollbar-thumb {
+    background: #4db5c3; 
+    border-radius: 10px;
+}
+  
+::-webkit-scrollbar-thumb:hover {
+    background: #2d85ad; 
+}
+  
+::-webkit-scrollbar-thumb:active {
+    background: #1d759a;
+}
+
+body {
+    position: relative;
+    z-index: -3;
+}
+
+header {
+    text-align: center;
+    padding: 2rem 0 0.5rem;
+    background-image: url("./dna-image.jpg");
+    color: #fff;
+    background-position: center;
+    background-size: cover;
+}
+
+nav {
+    margin: 1rem 0.5rem 0;
+    display: flex;
+    backdrop-filter: blur(3px);
+    background-color: #fff2;
+    gap: 0.5rem;
+}
+
+nav > a {
+    color: #fff;
+}
+
+nav > a:hover {
+    color: #fff;
+}
+
+nav > a:active {
+    color: #fff;
+}
+
+nav a {
+    transition: all 0.3s ease-in-out;
+    display: inline-block;
+    padding: 20px;
+    backdrop-filter: blur(3px);
+    background-color: #fff4;
+}
+
+nav a:hover {
+    backdrop-filter: blur(3px);
+    background-color: #fff6;
+}
+
+.dropbtn {
+    transition: all 0.3s ease-in-out;
+    background-color: #52aed5;
+    color: #fff;
+    padding: 20px;
+    font-size: 16px;
+    border: none;
+    min-width: 160px;
+}
+  
+.dropdown {
+    position: relative;
+    display: inline-block;
+    z-index: 0;
+}
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+  
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+  
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+  
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+  
+.dropdown:hover .dropbtn {
+    background-color: #2d75a3;
+}
+
+nav .dropbtn {
+    backdrop-filter: blur(5px);
+    background-color: #fff4;
+}
+
+nav .dropdown:hover .dropbtn {
+    backdrop-filter: blur(5px);
+    background-color: #fff6;
+}

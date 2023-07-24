@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>DNA Tools - Conversions</title>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    </head>
+    <body>
+        <header>
+            <h1>DNA Tools</h1>
+            <nav>
+                <a href="./allele-grid.html">Allele Grid</a>
+                <div class="dropdown">
+                    <button class="dropbtn">This Page <i class="fa fa-caret-down"></i></button>
+                    <div class="dropdown-content">
+                      <a href="javascript:;">Convert to amino acids</a>
+                      <a href="javascript:;">Convert to complementary strand</a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <h2>Convert to Amino Acid</h2>
+            <div class="dropdown">
+                <button class="dropbtn">Pick an input <i class="fa fa-caret-down"></i></button>
+                <div class="dropdown-content">
+                  <a href="javascript:;" id="AA-select-mRNA">mRNA</a>
+                  <a href="javascript:;" id="AA-select-tRNA">tRNA</a>
+                  <a href="javascript:;" id="AA-select-Chromosome">Chromosome</a>
+                  <a href="javascript:;" id="AA-select-CChromosome">Complementary Chromosome</a>
+                </div>
+            </div>
+            <div id="AA-ct-mRNA">
+                <h3>mRNA to Amino Acid</h3>
+                <input type="text" id="AA-set-mRNA" />
+                <br />
+                <button id="convert-mRNA-AA">Convert</button>
+                <hr />
+                1 letter: <span id="output-mRNA-AA-1"></span><br /><br />
+                3 letters: <span id="output-mRNA-AA-3"></span><br /><br />
+                Full acid name: <span id="output-mRNA-AA-f"></span><br />
+            </div>
+            <div id="AA-ct-tRNA">
+                <h3>tRNAs to Amino Acid</h3>
+                <input type="text" id="AA-set-tRNA" />
+                <br />
+                <button id="convert-tRNA-AA">Convert</button>
+                <hr />
+                1 letter: <span id="output-tRNA-AA-1"></span><br /><br />
+                3 letters: <span id="output-tRNA-AA-3"></span><br /><br />
+                Full acid name: <span id="output-tRNA-AA-f"></span><br />
+            </div>
+            <div id="AA-ct-Chromosome">
+                <h3>Chromosome to Amino Acid</h3>
+                <input type="text" id="AA-set-Chromosome" />
+                <br />
+                <button id="convert-Chromosome-AA">Convert</button>
+                <hr />
+                1 letter: <span id="output-Chromosome-AA-1"></span><br /><br />
+                3 letters: <span id="output-Chromosome-AA-3"></span><br /><br />
+                Full acid name: <span id="output-Chromosome-AA-f"></span><br />
+            </div>
+            <div id="AA-ct-CChromosome">
+                <h3>Complementary Chromosome to Amino Acid</h3>
+                <input type="text" id="AA-set-CChromosome" />
+                <br />
+                <button id="convert-CChromosome-AA">Convert</button>
+                <hr />
+                1 letter: <span id="output-CChromosome-AA-1"></span><br /><br />
+                3 letters: <span id="output-CChromosome-AA-3"></span><br /><br />
+                Full acid name: <span id="output-CChromosome-AA-f"></span><br />
+            </div>
+        </main>
+        <footer>
+            Nucleotides: 
+            <ul>
+                <li>A: Adenine</li>
+                <li>T: Thymine (DNA only)</li>
+                <li>U: Uracil (RNA only)</li>
+                <li>G: Guanine</li>
+                <li>C: Cytosine</li>
+            </ul>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>
